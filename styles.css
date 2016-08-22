@@ -1,0 +1,25 @@
+body {
+  background-color: black;
+}
+#box {
+  margin: auto;
+  display: block;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+}
+
+.box1{
+  background-color: blue;
+}
+.box2 {
+  background-color: green;
+}
+
+.box3 {
+  background-color: orange;
+}
+
+.box4 {
+  background-color: purple;
+}
