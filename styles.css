@@ -3,9 +3,9 @@ body {
 }
 #box {
   margin: auto;
-  display: block;
-  width: 1px;
-  height: 1px;
+  display: inline;
+  width: 0px;
+  height: 0px;
   border-radius: 50%;
 }
 
