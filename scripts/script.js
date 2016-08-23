@@ -1,14 +1,34 @@
 $(document).ready(function() {
 
-        setInterval (function(){
-          $("div").animate({
-              height: 200,
-              width: 200,
-          }, 3000)
+  //How many boxes?
+  var boxNum = 30
+  //Generate Boxes
+  var boxGen = document.getElementById("empty");
+  for (var i = 0; i < boxNum; i++) {
+     boxGen.innerHTML += '<div class="box"></div>';
+  }
+  //Random circle colour
+  function randomColor() {
+      r = Math.floor(Math.random() * (256));
+      g = Math.floor(Math.random() * (256));
+      b = Math.floor(Math.random() * (256));
+      jQuery('.box').css('background-color', 'rgb(' + r + ',' + g + ',' + b + ')');
+  }
+      randomColor();
+      var t = setInterval(randomColor, 500);
 
-          $("div").animate({
-              height: 0,
-              width: 0,
-          }, 3000)
-        })
+  //Circle grow and shrink loop
+  setInterval(function() {
+      $(".box").animate({
+          height: 1000,
+          width: 1000,
+      }, 10000)
+
+      $(".box").animate({
+          height: 0,
+          width: 0,
+      }, 3000)
+  })
+
+
 })
