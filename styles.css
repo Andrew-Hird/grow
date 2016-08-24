@@ -2,25 +2,30 @@ body {
   background-color: black;
 }
 
+h3 {
+  font-family: courier;
+  color: white;
+  text-align: center;
+}
+
+input {
+text-align: center;
+display: block;
+margin: auto;
+margin-bottom: 20px;
+}
+
+#submit {
+  display: none;
+}
+
+
+
 .box {
   /*margin: auto;*/
+  /*margin: 0.1px;*/
   display: inline;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-
-.box1{
-  background-color: blue;
-}
-.box2 {
-  background-color: green;
-}
-
-.box3 {
-  background-color: orange;
-}
-
-.box4 {
-  background-color: purple;
+  /*width: 100px;
+  height: 100px;*/
+  /*border-radius: 50%;*/
 }
