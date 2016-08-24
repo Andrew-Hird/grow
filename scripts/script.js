@@ -12,10 +12,11 @@ $(document).ready(function() {
     //Change div colour individually
     //Random circle colour
     function randomColor() {
-        r = Math.floor(Math.random() * (256))
-        g = Math.floor(Math.random() * (256))
-        b = Math.floor(Math.random() * (256))
+
         $('.box').each(function() {
+          r = Math.floor(Math.random() * (256))
+          g = Math.floor(Math.random() * (256))
+          b = Math.floor(Math.random() * (256))
             $(this).css('background-color', 'rgb(' + r + ',' + g + ',' + b + ')')
         })
     }
@@ -26,8 +27,8 @@ $(document).ready(function() {
     //Circle grow and shrink loop
     setInterval(function() {
         $(".box").animate({
-            height: 500,
-            width: 500,
+            height: 700,
+            width: 700,
             'border-radius': '50%'
         }, 10000)
 
@@ -37,4 +38,5 @@ $(document).ready(function() {
             'border-radius': '0%'
         }, 10000)
     })
+
 })
