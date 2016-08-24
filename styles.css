@@ -4,10 +4,11 @@ body {
 
 .box {
   /*margin: auto;*/
+  /*margin: 0.1px;*/
   display: inline;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  /*width: 100px;
+  height: 100px;*/
+  /*border-radius: 50%;*/
 }
 
 .box1{
