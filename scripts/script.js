@@ -1,7 +1,6 @@
 $(document).ready(function() {
-
     //How many boxes?
-    var boxNum = 60
+    var boxNum = 300
 
     //Generate Boxes
     var boxGen = document.getElementById("empty");
@@ -10,10 +9,9 @@ $(document).ready(function() {
     }
 
     //Change div colour individually
-    //Random circle colour
     function randomColor() {
-
         $('.box').each(function() {
+          //Random circle colour
           r = Math.floor(Math.random() * (256))
           g = Math.floor(Math.random() * (256))
           b = Math.floor(Math.random() * (256))
@@ -22,7 +20,6 @@ $(document).ready(function() {
     }
     randomColor();
     var t = setInterval(randomColor, 500)
-
 
     //Circle grow and shrink loop
     setInterval(function() {
