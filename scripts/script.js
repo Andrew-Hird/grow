@@ -11,10 +11,10 @@ $(document).ready(function() {
     //Change div colour individually
     function randomColor() {
         $('.box').each(function() {
-          //Random circle colour
-          r = Math.floor(Math.random() * (256))
-          g = Math.floor(Math.random() * (256))
-          b = Math.floor(Math.random() * (256))
+            //Random circle colour
+            r = Math.floor(Math.random() * (256))
+            g = Math.floor(Math.random() * (256))
+            b = Math.floor(Math.random() * (256))
             $(this).css('background-color', 'rgb(' + r + ',' + g + ',' + b + ')')
         })
     }
@@ -35,5 +35,4 @@ $(document).ready(function() {
             'border-radius': '0%'
         }, 10000)
     })
-
 })
